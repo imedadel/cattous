@@ -1,10 +1,10 @@
-# cattous
+# cattous 🐱
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-Describe cattous here.
+CSS in JSX for lazy developers. Built using styled-components and styled system.
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
