@@ -1,7 +1,7 @@
 {
   "name": "cattous",
   "version": "1.0.0",
-  "description": "cattous React component",
+  "description": "CSS in JSX for lazy developers",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -19,7 +19,11 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
+  "dependencies": {
+    "camelcase": "^5.3.1",
+    "styled-components": "^4.2.0",
+    "styled-system": "^4.1.0"
+  },
   "peerDependencies": {
     "react": "16.x"
   },
@@ -28,11 +32,15 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Imed Adel <aadelimed@gmail.com>",
+  "homepage": "https://github.com/ImedAdel/cattous",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/ImedAdel/cattous",
   "keywords": [
-    "react-component"
+    "react-component",
+    "styled-components",
+    "styled-system",
+    "css-in-js",
+    "css-in-jsx"
   ]
 }
