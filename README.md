@@ -6,6 +6,21 @@
 
 CSS in JSX for lazy developers. Built using styled-components and styled system.
 
+```JS
+...
+
+import Div from "cattous"
+
+const Layout = () => (
+  <Div>
+    <Div fontSize="48px" color="black" fontWeight="900" as="h1">Cattous.</Div>
+    <Div fontSize="24px" as="p">A CSS in JSX library for lazy developers</Div>
+  </Div>
+)
+
+...
+```
+
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
 
