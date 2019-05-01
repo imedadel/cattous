@@ -1,23 +1,74 @@
 import React from "react";
 import styled from "styled-components";
-import { style } from "styled-system";
-import camelCase from "camelcase";
-// import cssProps from "./cssProps";
+import {
+  style,
+  space,
+  color,
+  display,
+  minWidth,
+  minHeight,
+  maxWidth,
+  maxHeight,
+  width,
+  height,
+  flex,
+  order,
+  flexWrap,
+  flexDirection,
+  flexBasis,
+  alignItems,
+  alignContent,
+  alignSelf,
+  justifyItems,
+  justifyContent,
+  justifySelf,
+  gridGap,
+  gridColumnGap,
+  gridRowGap,
+  gridColumn,
+  gridRow,
+  gridAutoFlow,
+  gridAutoColumns,
+  gridAutoRows,
+  gridTemplateColumns,
+  gridTemplateRows,
+  gridTemplateAreas,
+  gridArea,
+  fontSize,
+  fontFamily,
+  fontWeight,
+  fontStyle,
+  textAlign,
+  lineHeight,
+  letterSpacing,
+  border,
+  borders,
+  borderTop,
+  borderRight,
+  borderBottom,
+  borderLeft,
+  borderColor,
+  borderRadius,
+  buttonStyle,
+  boxShadow,
+  backgroundImage,
+  backgroundSize,
+  backgroundPosition,
+  backgroundRepeat,
+  opacity,
+  overflow,
+  position,
+  top,
+  right,
+  bottom,
+  left,
+  zIndex,
+  textStyle,
+  colorStyle
+} from "styled-system";
 
-const themed = key => props => props.theme[key]
+const themed = key => props => props.theme[key];
 
-const alignContent = style({
-  prop: "alignContent",
-  cssProperty: "alignContent"
-});
-const alignItems = style({
-  prop: "alignItems",
-  cssProperty: "alignItems"
-});
-const alignSelf = style({
-  prop: "alignSelf",
-  cssProperty: "alignSelf"
-});
 const all = style({
   prop: "all",
   cssProperty: "all"
@@ -62,10 +113,6 @@ const backfaceVisibility = style({
   prop: "backfaceVisibility",
   cssProperty: "backfaceVisibility"
 });
-const background = style({
-  prop: "background",
-  cssProperty: "background"
-});
 const backgroundAttachment = style({
   prop: "backgroundAttachment",
   cssProperty: "backgroundAttachment"
@@ -78,37 +125,9 @@ const backgroundClip = style({
   prop: "backgroundClip",
   cssProperty: "backgroundClip"
 });
-const backgroundColor = style({
-  prop: "backgroundColor",
-  cssProperty: "backgroundColor"
-});
-const backgroundImage = style({
-  prop: "backgroundImage",
-  cssProperty: "backgroundImage"
-});
 const backgroundOrigin = style({
   prop: "backgroundOrigin",
   cssProperty: "backgroundOrigin"
-});
-const backgroundPosition = style({
-  prop: "backgroundPosition",
-  cssProperty: "backgroundPosition"
-});
-const backgroundRepeat = style({
-  prop: "backgroundRepeat",
-  cssProperty: "backgroundRepeat"
-});
-const backgroundSize = style({
-  prop: "backgroundSize",
-  cssProperty: "backgroundSize"
-});
-const border = style({
-  prop: "border",
-  cssProperty: "border"
-});
-const borderBottom = style({
-  prop: "borderBottom",
-  cssProperty: "borderBottom"
 });
 const borderBottomColor = style({
   prop: "borderBottomColor",
@@ -134,10 +153,6 @@ const borderCollapse = style({
   prop: "borderCollapse",
   cssProperty: "borderCollapse"
 });
-const borderColor = style({
-  prop: "borderColor",
-  cssProperty: "borderColor"
-});
 const borderImage = style({
   prop: "borderImage",
   cssProperty: "borderImage"
@@ -162,10 +177,6 @@ const borderImageWidth = style({
   prop: "borderImageWidth",
   cssProperty: "borderImageWidth"
 });
-const borderLeft = style({
-  prop: "borderLeft",
-  cssProperty: "borderLeft"
-});
 const borderLeftColor = style({
   prop: "borderLeftColor",
   cssProperty: "borderLeftColor"
@@ -177,14 +188,6 @@ const borderLeftStyle = style({
 const borderLeftWidth = style({
   prop: "borderLeftWidth",
   cssProperty: "borderLeftWidth"
-});
-const borderRadius = style({
-  prop: "borderRadius",
-  cssProperty: "borderRadius"
-});
-const borderRight = style({
-  prop: "borderRight",
-  cssProperty: "borderRight"
 });
 const borderRightColor = style({
   prop: "borderRightColor",
@@ -201,14 +204,6 @@ const borderRightWidth = style({
 const borderSpacing = style({
   prop: "borderSpacing",
   cssProperty: "borderSpacing"
-});
-const borderStyle = style({
-  prop: "borderStyle",
-  cssProperty: "borderStyle"
-});
-const borderTop = style({
-  prop: "borderTop",
-  cssProperty: "borderTop"
 });
 const borderTopColor = style({
   prop: "borderTopColor",
@@ -230,18 +225,6 @@ const borderTopWidth = style({
   prop: "borderTopWidth",
   cssProperty: "borderTopWidth"
 });
-const borderWidth = style({
-  prop: "borderWidth",
-  cssProperty: "borderWidth"
-});
-const bottom = style({
-  prop: "bottom",
-  cssProperty: "bottom"
-});
-const boxShadow = style({
-  prop: "boxShadow",
-  cssProperty: "boxShadow"
-});
 const boxSizing = style({
   prop: "boxSizing",
   cssProperty: "boxSizing"
@@ -257,10 +240,6 @@ const clear = style({
 const clip = style({
   prop: "clip",
   cssProperty: "clip"
-});
-const color = style({
-  prop: "color",
-  cssProperty: "color"
 });
 const columnCount = style({
   prop: "columnCount",
@@ -322,10 +301,6 @@ const direction = style({
   prop: "direction",
   cssProperty: "direction"
 });
-const display = style({
-  prop: "display",
-  cssProperty: "display"
-});
 const emptyCells = style({
   prop: "emptyCells",
   cssProperty: "emptyCells"
@@ -333,18 +308,6 @@ const emptyCells = style({
 const filter = style({
   prop: "filter",
   cssProperty: "filter"
-});
-const flex = style({
-  prop: "flex",
-  cssProperty: "flex"
-});
-const flexBasis = style({
-  prop: "flexBasis",
-  cssProperty: "flexBasis"
-});
-const flexDirection = style({
-  prop: "flexDirection",
-  cssProperty: "flexDirection"
 });
 const flexFlow = style({
   prop: "flexFlow",
@@ -358,10 +321,6 @@ const flexShrink = style({
   prop: "flexShrink",
   cssProperty: "flexShrink"
 });
-const flexWrap = style({
-  prop: "flexWrap",
-  cssProperty: "flexWrap"
-});
 const float = style({
   prop: "float",
   cssProperty: "float"
@@ -374,14 +333,6 @@ const fontFace = style({
   prop: "fontFace",
   cssProperty: "@fontFace"
 });
-const fontFamily = style({
-  prop: "fontFamily",
-  cssProperty: "fontFamily"
-});
-const fontSize = style({
-  prop: "fontSize",
-  cssProperty: "fontSize"
-});
 const fontSizeAdjust = style({
   prop: "fontSizeAdjust",
   cssProperty: "fontSizeAdjust"
@@ -390,45 +341,17 @@ const fontStretch = style({
   prop: "fontStretch",
   cssProperty: "fontStretch"
 });
-const fontStyle = style({
-  prop: "fontStyle",
-  cssProperty: "fontStyle"
-});
 const fontVariant = style({
   prop: "fontVariant",
   cssProperty: "fontVariant"
-});
-const fontWeight = style({
-  prop: "fontWeight",
-  cssProperty: "fontWeight"
 });
 const hangingPunctuation = style({
   prop: "hangingPunctuation",
   cssProperty: "hangingPunctuation"
 });
-const height = style({
-  prop: "height",
-  cssProperty: "height"
-});
-const justifyContent = style({
-  prop: "justifyContent",
-  cssProperty: "justifyContent"
-});
 const keyframes = style({
   prop: "keyframes",
   cssProperty: "@keyframes"
-});
-const left = style({
-  prop: "left",
-  cssProperty: "left"
-});
-const letterSpacing = style({
-  prop: "letterSpacing",
-  cssProperty: "letterSpacing"
-});
-const lineHeight = style({
-  prop: "lineHeight",
-  cssProperty: "lineHeight"
 });
 const listStyle = style({
   prop: "listStyle",
@@ -446,45 +369,9 @@ const listStyleType = style({
   prop: "listStyleType",
   cssProperty: "listStyleType"
 });
-const margin = style({
-  prop: "margin",
-  cssProperty: "margin"
-});
-const marginBottom = style({
-  prop: "marginBottom",
-  cssProperty: "marginBottom"
-});
-const marginLeft = style({
-  prop: "marginLeft",
-  cssProperty: "marginLeft"
-});
-const marginRight = style({
-  prop: "marginRight",
-  cssProperty: "marginRight"
-});
-const marginTop = style({
-  prop: "marginTop",
-  cssProperty: "marginTop"
-});
-const maxHeight = style({
-  prop: "maxHeight",
-  cssProperty: "maxHeight"
-});
-const maxWidth = style({
-  prop: "maxWidth",
-  cssProperty: "maxWidth"
-});
 const media = style({
   prop: "media",
   cssProperty: "@media"
-});
-const minHeight = style({
-  prop: "minHeight",
-  cssProperty: "minHeight"
-});
-const minWidth = style({
-  prop: "minWidth",
-  cssProperty: "minWidth"
 });
 const navDown = style({
   prop: "navDown",
@@ -506,14 +393,6 @@ const navUp = style({
   prop: "navUp",
   cssProperty: "navUp"
 });
-const opacity = style({
-  prop: "opacity",
-  cssProperty: "opacity"
-});
-const order = style({
-  prop: "order",
-  cssProperty: "order"
-});
 const outline = style({
   prop: "outline",
   cssProperty: "outline"
@@ -534,10 +413,6 @@ const outlineWidth = style({
   prop: "outlineWidth",
   cssProperty: "outlineWidth"
 });
-const overflow = style({
-  prop: "overflow",
-  cssProperty: "overflow"
-});
 const overflowX = style({
   prop: "overflowX",
   cssProperty: "overflowX"
@@ -545,26 +420,6 @@ const overflowX = style({
 const overflowY = style({
   prop: "overflowY",
   cssProperty: "overflowY"
-});
-const padding = style({
-  prop: "padding",
-  cssProperty: "padding"
-});
-const paddingBottom = style({
-  prop: "paddingBottom",
-  cssProperty: "paddingBottom"
-});
-const paddingLeft = style({
-  prop: "paddingLeft",
-  cssProperty: "paddingLeft"
-});
-const paddingRight = style({
-  prop: "paddingRight",
-  cssProperty: "paddingRight"
-});
-const paddingTop = style({
-  prop: "paddingTop",
-  cssProperty: "paddingTop"
 });
 const pageBreakAfter = style({
   prop: "pageBreakAfter",
@@ -586,10 +441,6 @@ const perspectiveOrigin = style({
   prop: "perspectiveOrigin",
   cssProperty: "perspectiveOrigin"
 });
-const position = style({
-  prop: "position",
-  cssProperty: "position"
-});
 const quotes = style({
   prop: "quotes",
   cssProperty: "quotes"
@@ -598,10 +449,6 @@ const resize = style({
   prop: "resize",
   cssProperty: "resize"
 });
-const right = style({
-  prop: "right",
-  cssProperty: "right"
-});
 const tabSize = style({
   prop: "tabSize",
   cssProperty: "tabSize"
@@ -609,10 +456,6 @@ const tabSize = style({
 const tableLayout = style({
   prop: "tableLayout",
   cssProperty: "tableLayout"
-});
-const textAlign = style({
-  prop: "textAlign",
-  cssProperty: "textAlign"
 });
 const textAlignLast = style({
   prop: "textAlignLast",
@@ -654,10 +497,6 @@ const textTransform = style({
   prop: "textTransform",
   cssProperty: "textTransform"
 });
-const top = style({
-  prop: "top",
-  cssProperty: "top"
-});
 const transform = style({
   prop: "transform",
   cssProperty: "transform"
@@ -694,10 +533,6 @@ const unicodeBidi = style({
   prop: "unicodeBidi",
   cssProperty: "unicodeBidi"
 });
-const verticalAlign = style({
-  prop: "verticalAlign",
-  cssProperty: "verticalAlign"
-});
 const visibility = style({
   prop: "visibility",
   cssProperty: "visibility"
@@ -705,10 +540,6 @@ const visibility = style({
 const whiteSpace = style({
   prop: "whiteSpace",
   cssProperty: "whiteSpace"
-});
-const width = style({
-  prop: "width",
-  cssProperty: "width"
 });
 const wordBreak = style({
   prop: "wordBreak",
@@ -722,11 +553,8 @@ const wordWrap = style({
   prop: "wordWrap",
   cssProperty: "wordWrap"
 });
-const zIndex = style({
-  prop: "zIndex",
-  cssProperty: "zIndex"
-});
-const Div = styled('div')(
+
+const Div = styled("div")(
   alignContent,
   alignItems,
   alignSelf,
@@ -745,13 +573,13 @@ const Div = styled('div')(
   backgroundAttachment,
   backgroundBlendMode,
   backgroundClip,
-  backgroundColor,
   backgroundImage,
   backgroundOrigin,
   backgroundPosition,
   backgroundRepeat,
   backgroundSize,
   border,
+  borders,
   borderBottom,
   borderBottomColor,
   borderBottomLeftRadius,
@@ -826,9 +654,23 @@ const Div = styled('div')(
   fontStyle,
   fontVariant,
   fontWeight,
+  gridGap,
+  gridColumnGap,
+  gridRowGap,
+  gridColumn,
+  gridRow,
+  gridAutoFlow,
+  gridAutoColumns,
+  gridAutoRows,
+  gridTemplateColumns,
+  gridTemplateRows,
+  gridTemplateAreas,
+  gridArea,
   hangingPunctuation,
   height,
   justifyContent,
+  justifyItems,
+  justifySelf,
   keyframes,
   left,
   letterSpacing,
@@ -837,11 +679,8 @@ const Div = styled('div')(
   listStyleImage,
   listStylePosition,
   listStyleType,
-  margin,
-  marginBottom,
-  marginLeft,
-  marginRight,
-  marginTop,
+  space,
+  size,
   maxHeight,
   maxWidth,
   media,
@@ -862,11 +701,6 @@ const Div = styled('div')(
   overflow,
   overflowX,
   overflowY,
-  padding,
-  paddingBottom,
-  paddingLeft,
-  paddingRight,
-  paddingTop,
   pageBreakAfter,
   pageBreakBefore,
   pageBreakInside,
@@ -907,8 +741,17 @@ const Div = styled('div')(
   wordSpacing,
   wordWrap,
   zIndex,
-  themed('Div')
+  textStyle,
+  colorStyle,
+  buttonStyle,
+  themed("Div")
 );
 
 // export { cssProps };
+export const Flex = styled(Div)(
+  {
+    display: "flex"
+  },
+  themed("Flex")
+);
 export default Div;
