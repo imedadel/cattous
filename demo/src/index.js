@@ -17,12 +17,13 @@ const Demo = () => (
       <Div
         py={5}
         fontSize={12}
-        height="100%"
+        height="90vh"
         width="100%"
         background="linear-gradient(to right, #654ea3, #eaafc8)"
         m="auto"
         textAlign="center"
         verticalAlign="middle"
+        as="h1"
       >
         Hello World. Cattous.
       </Div>
