@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { style } from "styled-system";
 import camelCase from "camelcase";
-import cssProps from "./cssProps";
+// import cssProps from "./cssProps";
+
+const themed = key => props => props.theme[key]
 
 const alignContent = style({
   prop: "alignContent",
@@ -724,7 +726,7 @@ const zIndex = style({
   prop: "zIndex",
   cssProperty: "zIndex"
 });
-const Div = styled.div(
+const Div = styled('div')(
   alignContent,
   alignItems,
   alignSelf,
@@ -904,7 +906,8 @@ const Div = styled.div(
   wordBreak,
   wordSpacing,
   wordWrap,
-  zIndex
+  zIndex,
+  themed('Div')
 );
 
 // export { cssProps };
