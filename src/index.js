@@ -49,8 +49,11 @@ import {
   borderLeft,
   borderColor,
   borderRadius,
+  borderStyle,
+  borderWidth,
   buttonStyle,
   boxShadow,
+  background,
   backgroundImage,
   backgroundSize,
   backgroundPosition,
@@ -64,7 +67,9 @@ import {
   left,
   zIndex,
   textStyle,
-  colorStyle
+  colorStyle,
+  size,
+  verticalAlign
 } from "styled-system";
 
 const themed = key => props => props.theme[key];
