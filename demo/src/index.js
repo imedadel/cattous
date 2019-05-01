@@ -1,32 +1,33 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+// import {ThemeProvider} from "styled-components"
 
-import Div, {Flex} from "../../src";
+import Div, {
+  ThemeProvider,
+  Normalize,
+  NormalizeOpenType,
+  bootstrap
+} from "../../src";
 
 const Demo = () => (
-  <div>
-    <Div
-      py={4}
-      fontSize={8}
-      fontWeight={900}
-      height="100%"
-      width="100%"
-      background="linear-gradient(to right, #654ea3, #eaafc8)"
-      m="auto"
-      textAlign="center"
-      verticalAlign="middle"
-    >
-      Hello World. Cattous.
+  <ThemeProvider theme={bootstrap}>
+    <Div>
+      <Normalize />
+      <NormalizeOpenType />
+      <Div
+        py={5}
+        fontSize={12}
+        height="100%"
+        width="100%"
+        background="linear-gradient(to right, #654ea3, #eaafc8)"
+        m="auto"
+        textAlign="center"
+        verticalAlign="middle"
+      >
+        Hello World. Cattous.
+      </Div>
     </Div>
-    <pre>
-      {/* {cssProps.map(k=>`${k},\n`)} */}
-      {/* {cssProps.map(
-        k =>
-          `const ${camelCase(k)} = style({\nprop:'${camelCase(k)}',\ncssProperty: '${camelCase(k)}'\n})\n`
-      )}
-      const Div = styled.div({cssProps.map(k=>`${camelCase(k)},\n`)})  */}
-    </pre>
-  </div>
+  </ThemeProvider>
 );
 
 render(<Demo />, document.querySelector("#demo"));
