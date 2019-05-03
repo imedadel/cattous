@@ -72,8 +72,8 @@ import {
   verticalAlign,
   variant
 } from "styled-system";
-import {normalize} from "./normalize/normalize"
-import {normalizeOpenType} from "./normalizeOpenType/normalizeOpenType"
+import { normalize } from "./normalize/normalize";
+import { normalizeOpenType } from "./normalizeOpenType/normalizeOpenType";
 
 const themed = key => props => props.theme[key];
 
@@ -779,6 +779,7 @@ const Div = styled("div")(
   colorStyle,
   buttonStyle,
   hoverState,
+  debugState,
   themed("Div")
 );
 
