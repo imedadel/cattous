@@ -32,7 +32,7 @@ const Layout = () => (
 )
 ```
 
-If you would like to add extra styles to `Div`, you can easily use styled-components for that.
+If you would like to add extra styles to `Div`, you can easily use styled-components for that. `as` is used to change the resulting HTML element.
 
 ```JS
 const StyledDiv = styled(Div)`
