@@ -566,6 +566,10 @@ const hoverState = variant({
   prop: "hover",
   key: "hover"
 });
+const debugState = variant({
+  prop: "debug",
+  key: "debug"
+});
 
 const Div = styled("div")(
   alignContent,
