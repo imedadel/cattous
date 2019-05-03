@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { ThemeProvider, createGlobalStyle, css } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import {
   style,
   space,
@@ -781,8 +781,6 @@ const Div = styled("div")(
   hoverState,
   themed("Div")
 );
-
-
 
 export const Normalize = createGlobalStyle`${normalize}`;
 export const NormalizeOpenType = createGlobalStyle`${normalizeOpenType}`;
