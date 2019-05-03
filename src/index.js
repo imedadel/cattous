@@ -803,5 +803,5 @@ const bootstrap = {
 };
 export const Normalize = createGlobalStyle`${normalize}`;
 export const NormalizeOpenType = createGlobalStyle`${normalizeOpenType}`;
-export { ThemeProvider, bootstrap };
+export { bootstrap };
 export default Div;

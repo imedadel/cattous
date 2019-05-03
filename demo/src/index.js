@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-// import {ThemeProvider} from "styled-components"
+import {ThemeProvider} from "styled-components"
 
 import Div, {
-  ThemeProvider,
   Normalize,
   NormalizeOpenType,
   bootstrap
