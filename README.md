@@ -1,4 +1,4 @@
-<p align="center"><img src="./cattous.svg" alt="Cattous Logo" ></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ImedAdel/cattous/master/cattous.svg?sanitize=true" alt="Cattous Logo" ></p>
 
 <h1 align="center">Cattous 🐱</h1>
 <p align="center">Easily define your design system and write your CSS using JSX.</p>
