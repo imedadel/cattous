@@ -139,15 +139,18 @@ const backgroundOrigin = style({
 });
 const borderBottomColor = style({
   prop: "borderBottomColor",
-  cssProperty: "borderBottomColor"
+  cssProperty: "borderBottomColor",
+  key: "colors"
 });
 const borderBottomLeftRadius = style({
   prop: "borderBottomLeftRadius",
-  cssProperty: "borderBottomLeftRadius"
+  cssProperty: "borderBottomLeftRadius",
+  key: "radii"
 });
 const borderBottomRightRadius = style({
   prop: "borderBottomRightRadius",
-  cssProperty: "borderBottomRightRadius"
+  cssProperty: "borderBottomRightRadius",
+  key: "radii"
 });
 const borderBottomStyle = style({
   prop: "borderBottomStyle",
@@ -155,7 +158,8 @@ const borderBottomStyle = style({
 });
 const borderBottomWidth = style({
   prop: "borderBottomWidth",
-  cssProperty: "borderBottomWidth"
+  cssProperty: "borderBottomWidth",
+  key: "borderWidths"
 });
 const borderCollapse = style({
   prop: "borderCollapse",
@@ -183,11 +187,13 @@ const borderImageSource = style({
 });
 const borderImageWidth = style({
   prop: "borderImageWidth",
-  cssProperty: "borderImageWidth"
+  cssProperty: "borderImageWidth",
+  key: "borderWidths"
 });
 const borderLeftColor = style({
   prop: "borderLeftColor",
-  cssProperty: "borderLeftColor"
+  cssProperty: "borderLeftColor",
+  key: "colors"
 });
 const borderLeftStyle = style({
   prop: "borderLeftStyle",
@@ -195,11 +201,13 @@ const borderLeftStyle = style({
 });
 const borderLeftWidth = style({
   prop: "borderLeftWidth",
-  cssProperty: "borderLeftWidth"
+  cssProperty: "borderLeftWidth",
+  key: "borderWidths"
 });
 const borderRightColor = style({
   prop: "borderRightColor",
-  cssProperty: "borderRightColor"
+  cssProperty: "borderRightColor",
+  key: "colors"
 });
 const borderRightStyle = style({
   prop: "borderRightStyle",
@@ -207,7 +215,8 @@ const borderRightStyle = style({
 });
 const borderRightWidth = style({
   prop: "borderRightWidth",
-  cssProperty: "borderRightWidth"
+  cssProperty: "borderRightWidth",
+  key: "borderWidths"
 });
 const borderSpacing = style({
   prop: "borderSpacing",
@@ -215,15 +224,18 @@ const borderSpacing = style({
 });
 const borderTopColor = style({
   prop: "borderTopColor",
-  cssProperty: "borderTopColor"
+  cssProperty: "borderTopColor",
+  key: "colors"
 });
 const borderTopLeftRadius = style({
   prop: "borderTopLeftRadius",
-  cssProperty: "borderTopLeftRadius"
+  cssProperty: "borderTopLeftRadius",
+  key: "radii"
 });
 const borderTopRightRadius = style({
   prop: "borderTopRightRadius",
-  cssProperty: "borderTopRightRadius"
+  cssProperty: "borderTopRightRadius",
+  key: "radii"
 });
 const borderTopStyle = style({
   prop: "borderTopStyle",
@@ -231,7 +243,8 @@ const borderTopStyle = style({
 });
 const borderTopWidth = style({
   prop: "borderTopWidth",
-  cssProperty: "borderTopWidth"
+  cssProperty: "borderTopWidth",
+  key: "borderWidths"
 });
 const boxSizing = style({
   prop: "boxSizing",
@@ -267,7 +280,8 @@ const columnRule = style({
 });
 const columnRuleColor = style({
   prop: "columnRuleColor",
-  cssProperty: "columnRuleColor"
+  cssProperty: "columnRuleColor",
+  key: "colors"
 });
 const columnRuleStyle = style({
   prop: "columnRuleStyle",
@@ -407,7 +421,8 @@ const outline = style({
 });
 const outlineColor = style({
   prop: "outlineColor",
-  cssProperty: "outlineColor"
+  cssProperty: "outlineColor",
+  key: "colors"
 });
 const outlineOffset = style({
   prop: "outlineOffset",
@@ -475,7 +490,8 @@ const textDecoration = style({
 });
 const textDecorationColor = style({
   prop: "textDecorationColor",
-  cssProperty: "textDecorationColor"
+  cssProperty: "textDecorationColor",
+  key: "colors"
 });
 const textDecorationLine = style({
   prop: "textDecorationLine",
@@ -499,7 +515,8 @@ const textOverflow = style({
 });
 const textShadow = style({
   prop: "textShadow",
-  cssProperty: "textShadow"
+  cssProperty: "textShadow",
+  key: "shadows"
 });
 const textTransform = style({
   prop: "textTransform",
