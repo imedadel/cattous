@@ -21,9 +21,10 @@ const Demo = () => (
         width="100%"
         background="linear-gradient(to right, #654ea3, #eaafc8)"
         m="auto"
-        textAlign="center"
+        textAlign={["center","right","left"]}
         verticalAlign="middle"
         as="h1"
+        hover="dim"
       >
         Hello World. Cattous.
       </Div>

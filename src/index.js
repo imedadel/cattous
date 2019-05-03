@@ -69,7 +69,8 @@ import {
   textStyle,
   colorStyle,
   size,
-  verticalAlign
+  verticalAlign,
+  variant
 } from "styled-system";
 
 const themed = key => props => props.theme[key];
@@ -559,6 +560,11 @@ const wordWrap = style({
   cssProperty: "wordWrap"
 });
 
+const hoverState = variant({
+  prop: "hover",
+  key: "hover"
+});
+
 const Div = styled("div")(
   alignContent,
   alignItems,
@@ -749,6 +755,7 @@ const Div = styled("div")(
   textStyle,
   colorStyle,
   buttonStyle,
+  hoverState,
   themed("Div")
 );
 
@@ -1003,6 +1010,20 @@ const normalizeOpenType = css`
 const bootstrap = {
   space: [0, "0.25rem", "0.5rem", "1rem", "1.5rem", "3rem"],
   fontSizes: ["1rem","1.25rem","1.5rem","1.75rem","2rem","2.5rem","3rem","3.5rem","4rem","4.5rem","5rem","5.5rem","6rem"],
+  hover: {
+    dim: {
+      opacity: '1',
+      transition: "opacity .15s ease-in",
+      "&:hover,&:focus": {
+        opacity: '0.5',
+        transition: "opacity .15s ease-in"
+      },
+      "&:active": {
+        opacity: '0.8',
+        transition: "opacity .15s ease-in"
+      }
+    }
+  }
 };
 export const Normalize = createGlobalStyle`${normalize}`;
 export const NormalizeOpenType = createGlobalStyle`${normalizeOpenType}`;
