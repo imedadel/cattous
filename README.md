@@ -13,14 +13,14 @@
 
 1. Import `ThemeProvider` from `styled-components`.
 2. Import `Div`. (Optionally, you can also import `Normalize`, and `NormalizeOpenType`)
-3. Define your theme or import an existing one, like `cattous-tachyons` (still under development).
+3. Define your theme or import an existing one, like `cattous-tachyons`.
 
 And :tada:!
 
 ```JS
 import { ThemeProvider } from "styled-components"
 import Div, { Normalize, NormalizeOpenType } from "cattous"
-import cattousTachyons from "cattous-tachyons" // WIP
+import cattousTachyons from "cattous-tachyons"
 
 const Layout = () => (
   <ThemeProvider theme={cattousTachyons}>
@@ -42,7 +42,7 @@ Thus, I made Cattous 🐱 to help me get done with styling my side projects as f
 
 The project is still under development, although it can be used without any problems.
 
-I am still **improving the source code**, **adding more options for theming**, and **importing known CSS libraries** such as Tachyons, Bootstrap, and TailwindCSS.
+I am still **improving the source code**, **adding more options for theming**, and **importing known CSS libraries** such as Tachyons (✔), Bootstrap, and TailwindCSS.
 
 ## Questions? Suggestions?
 
