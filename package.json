@@ -40,6 +40,7 @@
     "styled-components",
     "styled-system",
     "css-in-js",
-    "css-in-jsx"
+    "css-in-jsx",
+    "cattous"
   ]
 }
