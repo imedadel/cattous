@@ -74,6 +74,7 @@ import {
 } from "styled-system";
 import { normalize } from "./normalize/normalize";
 import { normalizeOpenType } from "./normalizeOpenType/normalizeOpenType";
+import { pesticide } from "./pesticide/pesticide";
 
 const themed = key => props => props.theme[key];
 
@@ -785,4 +786,5 @@ const Div = styled("div")(
 
 export const Normalize = createGlobalStyle`${normalize}`;
 export const NormalizeOpenType = createGlobalStyle`${normalizeOpenType}`;
+export const Pesticide = createGlobalStyle`${pesticide}`;
 export default Div;
